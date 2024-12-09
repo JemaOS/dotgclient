@@ -4,7 +4,11 @@ solutions = [
     "url": "https://github.com/JemaOS/chromium.git",
     "managed": False,
     "custom_deps": {},
-    "custom_vars": {},
+    "custom_vars": {
+      "skip_native_client": "True",  # Indiquer d'ignorer NaCl
+    },
   },
 ]
+
 target_os = ["chromeos"]
+
